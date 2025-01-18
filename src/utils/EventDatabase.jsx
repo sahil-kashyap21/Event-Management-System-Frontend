@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000/api/events/';
+const apiUrl = 'https://event-management-system-backend-60dr.onrender.com/api/events/';
 
 // Function to fetch and export the event list
 export const fetchEventList = async () => {
