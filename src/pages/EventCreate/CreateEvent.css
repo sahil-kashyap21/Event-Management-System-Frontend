@@ -1,0 +1,107 @@
+.create-event-container {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.create-event-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.create-event-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-event-container form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-event-container form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+.create-event-container form input,
+.create-event-container form textarea {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-event-container form input:focus,
+.create-event-container form textarea:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.4);
+  outline: none;
+}
+
+.create-event-container form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.create-event-container form button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.create-event-container form button:hover {
+  background-color: #005bb5;
+}
+
+.create-event-container form button:active {
+  transform: scale(0.98);
+}
+
+.create-event-container form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .create-event-container {
+    padding: 20px;
+  }
+
+  .create-event-container h2 {
+    font-size: 20px;
+  }
+
+  .create-event-container form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
