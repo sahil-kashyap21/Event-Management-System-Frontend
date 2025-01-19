@@ -46,7 +46,7 @@ const CreateEvent = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/create-event`, {
+      const response = await fetch(`https://event-management-system-backend-60dr.onrender.com/api/events/create-event`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
