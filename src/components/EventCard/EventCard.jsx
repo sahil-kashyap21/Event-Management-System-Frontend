@@ -6,6 +6,9 @@ const EventCard = ({ id, _id, heading, date, location, img, onDelete }) => {
 
   const handleDelete = async (e) => {
     e.preventDefault(); // Prevent navigation when clicking the delete button
+    const confirmed = window.confirm("Are you sure you want to delete this event?");
+    if (!confirmed) return;
+
     try {
       const response = await fetch(`https://event-management-system-backend-60dr.onrender.com/api/events/delete-event/${_id}`, {
         method: "DELETE",
