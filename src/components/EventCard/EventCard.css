@@ -1,3 +1,8 @@
+.card-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .card {
   background-color: rgb(227, 223, 177);
   width: 600px;
@@ -8,14 +13,18 @@
   padding: 32px;
   border-radius: 18px;
   border: 2px solid gold;
+  position: relative;
 }
+
 .card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.187);
 }
+
 .card img {
   width: 280px;
   border-radius: 14px;
 }
+
 .card .card-content {
   width: 230px;
   height: 180px;
@@ -24,23 +33,69 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .card .card-content h3 {
   font-size: 24px;
   text-transform: uppercase;
   color: rgb(43, 50, 43);
-
   font-weight: 600;
   margin-bottom: 40px;
 }
+
 .card .card-content p {
   font-size: 18px;
-
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 18px;
 }
+
 .card .card-content p span {
   font-size: 16px;
+}
+
+/* Delete Button */
+.delete-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: none;
+  color: rgb(229, 31, 31);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+  transform: scale(1.1); /* Slight zoom effect */
+  opacity: 0.8; /* Slight transparency */
+}
+
+.delete-button:active {
+  background-color: #a52a2a;
+  transform: scale(0.95);
+}
+
+/* Delete Icon */
+.delete-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(0.5); /* Neutral gray color for the icon */
+  transition: filter 0.3s ease;
+}
+
+.delete-button:hover .delete-icon {
+  filter: brightness(0) invert(0.8); /* Lighter shade on hover */
+}
+
+.delete-button:active .delete-icon {
+  filter: brightness(0) invert(1); /* Bright white on active */
 }

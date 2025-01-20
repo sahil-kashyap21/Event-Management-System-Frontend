@@ -4,11 +4,12 @@ import Navigation from "../../components/Navigation/Navigation.jsx";
 import "./EventList.css";
 const EventList = () => {
   const renderEventCards = () => {
-    return eventList.map(({ id, date, heading, location, img }) => {
+    return eventList.map(({ id, _id, date, heading, location, img }) => {
       return (
         <EventCard
           key={id}
           id={id}
+          _id={_id}
           date={date}
           heading={heading}
           location={location}
