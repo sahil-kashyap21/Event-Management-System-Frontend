@@ -52,7 +52,7 @@ const EventCard = ({ id, _id, heading, date, location, img, onDelete }) => {
 
       {/* Delete Button */}
       <button className="delete-button" onClick={handleDelete}>
-        <img src="../../dist/recycle-bin.png" alt="delete" className="delete-icon"/>
+        <img src="recycle-bin.png" alt="delete" className="delete-icon"/>
       </button>
     </div>
   );
